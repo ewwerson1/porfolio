@@ -1,0 +1,99 @@
+/*<Global>*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,11,1) 0%, rgba(21,21,23,1) 100%, rgba(32,22,22,1) 100%);
+}
+/*</Global>*/
+/*<Scrollbar>*/
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+*::-webkit-scrollbar-track {
+    background-color: #141010;
+}
+*::-webkit-scrollbar-thumb {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(218, 49, 49) 0%, rgb(245, 106, 106) 100%);
+    border-radius: 5px;
+}
+*::-webkit-scrollbar-button {
+    background-color: rgb(69, 73, 73);
+    width: 10px;
+    height: 10px;
+}
+/*</Scrollbar>*/
+/*<Menu>*/
+    header{
+        z-index: 1;
+    }
+    /*<Menu Mobile>*/
+        .mobile-menu-list{
+            cursor: pointer;
+            display: none; 
+        }
+        .mobile-menu-list ul{
+            display: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        .menu-icon div{
+            height: 2px;
+            margin: 5px;
+        }
+        .menu-icon div:nth-child(2){
+            margin-left: 10px;
+        }
+        @media(max-width:868px) {
+            /*Menu Mobile*/
+            .mobile-menu-list{
+                display: flex;
+            }
+            .desktop-menu-list{
+                display: none;
+            }
+        }
+    /*</Menu Mobile>*/
+/*</Menu>*/
+/*<Main>*/
+main{
+    max-width: 100vw;
+}
+    /*<Section>*/
+        @media(max-width:868px) {
+            .top-page div:nth-last-child(2){
+                display: none;
+            }
+        }
+        @media(max-width:992px) {
+            .top-page div:nth-child(1) h1{
+                font-size: 40px;
+            }
+            .top-page div:nth-child(1){
+                white-space: wrap;
+                margin-left: 50px;
+            }
+            .top-page div img{
+                margin-left: 50px;
+            }
+        }
+        /*.TOP-PAGE{*/
+            .top-page div img{
+                filter: drop-shadow(10px 0 0.75rem crimson);
+            }
+            .top-page{
+                white-space: nowrap;
+            }
+        /*}*/
+        /*WORKS{*/
+            
+        /*}*/
+    /*</Section>*/
+/*</Main>*/

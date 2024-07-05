@@ -1,0 +1,38 @@
+/*<Variáveis>*/
+:root{
+    /*Fontes*/
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+}
+/*</Variáveis>*/
+
+/*<Animações>*/
+    /*<Classes de animações>*/
+        .slideup{
+            animation: .7s linear 1s infinite alternate slideup;
+        }
+        .swipe-arrow{
+            backdrop-filter: blur(10px);
+        }
+        .dropdown-activated{
+            display: none;
+        }
+        .popup{
+            z-index: 1;
+            position: absolute;
+            display: none;
+            left: 50%;
+            transform: translate(-50%, -350%);
+            box-shadow: 100px 100px 100px 900px rgba(0,0,0,.8);
+        }
+    /*</Classes de animações>*/   
+    /*<Config das Animações>*/ 
+    @keyframes slideup{
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateY(-30%);
+        }
+    }
+    /*</Config das Animações>*/ 
+/*</Animações>*/
